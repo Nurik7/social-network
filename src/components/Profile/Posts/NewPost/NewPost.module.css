@@ -1,0 +1,9 @@
+.profilePostsNew {
+    margin-bottom: 15px;
+}
+.newPostText {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    padding: 8px 10px;
+}

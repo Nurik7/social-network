@@ -1,0 +1,48 @@
+.findUsersLogo {
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    display: flex;
+}
+
+.findUsersLeft {
+    display: flex;
+    flex-direction: column;
+}
+
+.findUsersLeft button {
+    width: 150px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.findUsersRight {
+    border: darkred 3px solid;
+    border-radius: 25px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.paginationPage {
+    margin: 5px;
+    background-color: darkgreen;
+    padding: 5px 5px 7px;
+    cursor: pointer;
+    border-radius: 7px;
+    color: whitesmoke;
+}
+
+.selectedPage {
+    color: darkorange;
+    font-weight: 900;
+}
+
+.paginationPageContainer {
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 3px;
+}

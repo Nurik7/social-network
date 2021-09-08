@@ -1,0 +1,8 @@
+.profileDescr {
+    display: flex;
+    padding: 15px;
+}
+
+.status {
+    display: flex;
+}

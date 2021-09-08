@@ -1,0 +1,16 @@
+.formControl.error input,
+.formControl.error textarea {
+    border: 3px blue solid;
+}
+
+.formControl.error div span {
+    color: blue;
+}
+
+.errorMessage {
+    font-size: 20px;
+    color: blue;
+    border: blue solid 3px;
+    padding: 5px;
+    display: inline-block;
+}
