@@ -13,11 +13,11 @@ let initialState = {
         site: "pepsi.uz"
     }],
     postsData: [
-        {id: 1, postText: 'yo nigga', likes: 5},
+        {id: 1, postText: 'yo guyzz', likes: 5},
         {id: 2, postText: 'wassup', likes: 17},
         {id: 3, postText: 'imma programer', likes: 0},
         {id: 4, postText: 'ynwa', likes: 6},
-        {id: 5, postText: 'я ебу собак', likes: 11}
+        {id: 5, postText: 'я люблю собак', likes: 11}
     ],
     profile: null,
     status: ''
