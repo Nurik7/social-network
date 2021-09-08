@@ -4,20 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from "./Redux/redux-store";
-import {BrowserRouter} from "react-router-dom";
+import {HashRouter} from "react-router-dom";
 import {Provider} from "react-redux";
 
 
 let rerenderReact = (state) => {
     ReactDOM.render(
         // <React.StrictMode>
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter>
             <Provider store={store}>
                 <App state={state}
                      dispatch={store.dispatch.bind(store)}
                      store={store}/>
             </Provider>
-        </BrowserRouter>,
+        </HashRouter>,
         // </React.StrictMode>
         //Strict Mode is commented because if I uncomment it I can get two arrays of users if 'Find Users' part
         document.getElementById('root')
