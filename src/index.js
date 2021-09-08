@@ -11,7 +11,7 @@ import {Provider} from "react-redux";
 let rerenderReact = (state) => {
     ReactDOM.render(
         // <React.StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Provider store={store}>
                 <App state={state}
                      dispatch={store.dispatch.bind(store)}
