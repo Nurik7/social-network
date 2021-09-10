@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/aaa/static/css/main.aa3b98ea.chunk.css",
+    "main.js": "/aaa/static/js/main.c6e2d3b9.chunk.js",
+    "main.js.map": "/aaa/static/js/main.c6e2d3b9.chunk.js.map",
+    "runtime-main.js": "/aaa/static/js/runtime-main.5d291c2b.js",
+    "runtime-main.js.map": "/aaa/static/js/runtime-main.5d291c2b.js.map",
+    "static/js/2.65714640.chunk.js": "/aaa/static/js/2.65714640.chunk.js",
+    "static/js/2.65714640.chunk.js.map": "/aaa/static/js/2.65714640.chunk.js.map",
+    "static/css/3.74db6408.chunk.css": "/aaa/static/css/3.74db6408.chunk.css",
+    "static/js/3.a8693159.chunk.js": "/aaa/static/js/3.a8693159.chunk.js",
+    "static/js/3.a8693159.chunk.js.map": "/aaa/static/js/3.a8693159.chunk.js.map",
+    "static/css/4.60a90d8f.chunk.css": "/aaa/static/css/4.60a90d8f.chunk.css",
+    "static/js/4.93cf7b08.chunk.js": "/aaa/static/js/4.93cf7b08.chunk.js",
+    "static/js/4.93cf7b08.chunk.js.map": "/aaa/static/js/4.93cf7b08.chunk.js.map",
+    "static/css/5.29b1e183.chunk.css": "/aaa/static/css/5.29b1e183.chunk.css",
+    "static/js/5.d6162323.chunk.js": "/aaa/static/js/5.d6162323.chunk.js",
+    "static/js/5.d6162323.chunk.js.map": "/aaa/static/js/5.d6162323.chunk.js.map",
+    "static/js/6.643f24bf.chunk.js": "/aaa/static/js/6.643f24bf.chunk.js",
+    "static/js/6.643f24bf.chunk.js.map": "/aaa/static/js/6.643f24bf.chunk.js.map",
+    "index.html": "/aaa/index.html",
+    "static/css/3.74db6408.chunk.css.map": "/aaa/static/css/3.74db6408.chunk.css.map",
+    "static/css/4.60a90d8f.chunk.css.map": "/aaa/static/css/4.60a90d8f.chunk.css.map",
+    "static/css/5.29b1e183.chunk.css.map": "/aaa/static/css/5.29b1e183.chunk.css.map",
+    "static/css/main.aa3b98ea.chunk.css.map": "/aaa/static/css/main.aa3b98ea.chunk.css.map",
+    "static/js/2.65714640.chunk.js.LICENSE.txt": "/aaa/static/js/2.65714640.chunk.js.LICENSE.txt",
+    "static/media/2_5404390458459685303.07fde0e6.jpg": "/aaa/static/media/2_5404390458459685303.07fde0e6.jpg",
+    "static/media/aave-aave-logo.0a64aa49.svg": "/aaa/static/media/aave-aave-logo.0a64aa49.svg",
+    "static/media/avatar-4.png": "/aaa/static/media/avatar-4.97fd1aa2.png",
+    "static/media/bars.0380b7fb.svg": "/aaa/static/media/bars.0380b7fb.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5d291c2b.js",
+    "static/js/2.65714640.chunk.js",
+    "static/css/main.aa3b98ea.chunk.css",
+    "static/js/main.c6e2d3b9.chunk.js"
+  ]
+}
