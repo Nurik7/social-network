@@ -1,0 +1,18 @@
+.settings {
+    padding: 15px;
+}
+
+div .settingsNav {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+div .profileSettings:nth-child(1n+1) {
+    display: block;
+}
+
+.downloadLogo {
+    width: 100px;
+    height: 100px;
+}

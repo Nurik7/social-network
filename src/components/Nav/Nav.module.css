@@ -1,0 +1,48 @@
+a {
+    text-decoration: none;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: darkgreen;
+}
+
+.ul__list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.ul__list li a {
+    color: whitesmoke;
+    font-size: 21px;
+}
+
+.ul__list li {
+    margin-bottom: 3px;
+    padding-left: 40px;
+}
+
+ul li:last-child {
+    margin-top: 33px;
+}
+
+.ul__list li a.active, .navFriends .active{
+    color: orange;
+}
+.navFriends {
+    margin-top: 100px;
+    text-align: center;
+}
+.navFriendsText {
+    color: whitesmoke;
+    font-size: 25px;
+    display: block;
+}
+.navFriendsImg {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.navFriendsImg + .navFriendsImg {
+    margin-left: 5px;
+}

@@ -1,0 +1,6 @@
+.content__img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 0% 0%;
+}
