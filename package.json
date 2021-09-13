@@ -2,11 +2,16 @@
   "name": "it-kamasutra-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nurik7.github.io/social-network",
+  "homepage": "https://nurik7.github.io/social-net-upd",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.9.1",
+    "@types/react": "^17.0.20",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-router-dom": "^5.1.8",
     "axios": "^0.21.1",
     "formik": "^2.2.9",
     "react": "^17.0.2",
@@ -18,6 +23,7 @@
     "redux-form": "^8.3.7",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
+    "typescript": "^4.4.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -47,6 +53,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-router-dom": "^5.1.8",
     "gh-pages": "^3.2.3"
   }
 }

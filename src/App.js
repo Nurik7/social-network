@@ -36,7 +36,8 @@ class App extends Component {
         return (
             <div className="wrapper">
                 <HeaderContainer/>
-                <Nav navState={this.props.state.sidebar}/>
+                <Nav navState={this.props.state.sidebar} isAuth={this.props.isAuth}
+                     showSettingsIfLogged={this.props.showSettingsIfLogged}/>
                 <div className='wrapper__content'>
                     <Suspense fallback={<div><Preloader/> ...Loading...</div>}>
                         <Route path={'/profile/:userID?'} render={() => (<ProfileContainer/>)}/>
@@ -47,7 +48,8 @@ class App extends Component {
                     <Route path={'/news'} component={News}/>
                     <Route path={'/music'} component={Music}/>
                     {this.props.isAuth ?
-                        <Route path={'/settings/:settingsPage?'} render={() => (<Settings/>)}/> :
+                        <Route path={'/settings/:settingsPage?'}
+                               render={() => (<Settings/>)}/> :
                         <div/>}
 
                 </div>

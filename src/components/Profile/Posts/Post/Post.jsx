@@ -1,10 +1,10 @@
 import s from './Post.module.css'
-
+import myPicture from '../../../../Images/2_5404390458459685303.jpg'
 
 const Post = (props) => {
     return (
         <div className={s.profilePostItem}>
-            <img className={s.profileImage} src="https://hhcdn.ru/photo/530946371.jpeg?t=1630497440&h=gLRlysVhN4eWRI6WudmZGA" />
+            <img className={s.profileImage} src={myPicture}/>
             <div className={s.postInner}>{props.postText}<span className={s.likes}>Likes {props.likes}</span></div>
         </div>
     )

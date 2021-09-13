@@ -6,14 +6,16 @@ import reportWebVitals from './reportWebVitals';
 import store from "./Redux/redux-store";
 import {HashRouter} from "react-router-dom";
 import {Provider} from "react-redux";
+// import * as reactRouterDom from 'react-router-dom'
 
+// const HashRouter = require('react-router-dom')
 
-let rerenderReact = (state) => {
+let rerenderReact = props => {
     ReactDOM.render(
         // <React.StrictMode>
         <HashRouter>
             <Provider store={store}>
-                <App state={state}
+                <App state={props}
                      dispatch={store.dispatch.bind(store)}
                      store={store}/>
             </Provider>
