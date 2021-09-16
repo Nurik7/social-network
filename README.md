@@ -4,7 +4,7 @@
 ### `EN`
 For loginisation and testing the app you have to ask me for login and password! So please, DM me in [Telegram](https://t.me/ahahahahahhahahah), [VK](https://vk.com/nurikt7) or mail : tashpulatov00@mail.ru
 ### `RU`
-Для логинизации и тестирования приложения вам нужно будет написать мне, чтобы получить тестовый логин и пароль! Поэтому пожалуйся, напишите мне в [Telegram](https://t.me/ahahahahahhahahah), [VK](https://vk.com/nurikt7) или на почту : tashpulatov00@mail.ru
+Для логинизации и тестирования приложения вам нужно будет написать мне, чтобы получить тестовый логин и пароль! Поэтому пожалуйста, напишите мне в [Telegram](https://t.me/ahahahahahhahahah), [VK](https://vk.com/nurikt7) или на почту : tashpulatov00@mail.ru
 
 ## Description | Описание
 ### `EN`
