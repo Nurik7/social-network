@@ -8,8 +8,8 @@ const Me = props => {
     if (!props.profile) {
         return <Preloader/>
     } else {
-        let profileItem = [props.profile].map(p => (
-            <Description fullName={p.fullName} lookingForAJob={p.lookingForAJob} userId={p.userId}
+        let profileItem = [props.profile].map((p, index) => (
+            <Description key={index} fullName={p.fullName} lookingForAJob={p.lookingForAJob} userId={p.userId}
                          aboutMe={p.aboutMe} contacts={p.contacts} photos={p.photos} status={props.status}
                          updateStatus={props.updateStatus} authorizedUserId={props.authorizedUserId}
             />))
