@@ -30,32 +30,6 @@ const Messages = () => {
       console.log(JSON.parse(event.data));
     });
   }, []);
-  // const messages = [
-  //   {
-  //     avatar:
-  //       "https://img.favpng.com/14/21/10/computer-icons-online-chat-thought-avatar-emoticon-png-favpng-Rwxcu5Hqb2JQW8HPzQw2WCcGE.jpg",
-  //     userName: "Nurik",
-  //     message: "hello world",
-  //   },
-  //   {
-  //     avatar:
-  //       "https://img.favpng.com/14/21/10/computer-icons-online-chat-thought-avatar-emoticon-png-favpng-Rwxcu5Hqb2JQW8HPzQw2WCcGE.jpg",
-  //     userName: "Ashley",
-  //     message: "bye bye world",
-  //   },
-  //   {
-  //     avatar:
-  //       "https://img.favpng.com/14/21/10/computer-icons-online-chat-thought-avatar-emoticon-png-favpng-Rwxcu5Hqb2JQW8HPzQw2WCcGE.jpg",
-  //     userName: "Ronaldo",
-  //     message: "siu",
-  //   },
-  //   {
-  //     avatar:
-  //       "https://img.favpng.com/14/21/10/computer-icons-online-chat-thought-avatar-emoticon-png-favpng-Rwxcu5Hqb2JQW8HPzQw2WCcGE.jpg",
-  //     userName: "Messi",
-  //     message: "8-2",
-  //   },
-  // ];
   return (
     <div style={{ height: "60vh", overflowY: "auto" }}>
       Messages
