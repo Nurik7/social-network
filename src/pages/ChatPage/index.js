@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-const ws = new WebSocket(
-  "wss://social-network.samuraijs.com/handlers/ChatHandler.ashx"
-);
-
 const ChatPage = () => {
   return (
     <div>
@@ -13,23 +9,41 @@ const ChatPage = () => {
 };
 
 const Chat = () => {
+  const [wsChannel, setWsChannel] = useState(null);
+
+  useEffect(() => {
+    function createChannel() {
+      const ws = new WebSocket(
+        "wss://social-network.samuraijs.com/handlers/ChatHandler.ashx"
+      );
+      ws?.addEventListener("close", (event) => {
+        console.log("WS CLOSED");
+        setTimeout(createChannel, 5000);
+      });
+      setWsChannel(ws);
+    }
+    createChannel();
+  }, []);
+
+  useEffect(() => {}, [wsChannel]);
+
   return (
     <div>
-      <Messages />
-      <AddMessageForm />
+      <Messages wsChannel={wsChannel} />
+      <AddMessageForm wsChannel={wsChannel} />
     </div>
   );
 };
 
-const Messages = () => {
+const Messages = ({ wsChannel }) => {
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-    ws.addEventListener("message", (event) => {
-      setMessages(JSON.parse(event.data));
-      console.log(JSON.parse(event.data));
+    wsChannel?.addEventListener("message", (event) => {
+      let newMessages = JSON.parse(event.data);
+      setMessages((messages) => [...messages, ...newMessages]);
     });
-  }, []);
+  }, [wsChannel]);
   return (
     <div style={{ height: "60vh", overflowY: "auto" }}>
       Messages
@@ -59,11 +73,32 @@ const Message = ({ message, photo, userName }) => {
   );
 };
 
-const AddMessageForm = () => {
+const AddMessageForm = ({ wsChannel }) => {
+  const [message, setMessage] = useState("");
+  const [wsOpen, setWsOpen] = useState(false);
+  const sendMessage = () => {
+    if (!message) {
+      return;
+    }
+    wsChannel.send(message);
+    setMessage("");
+  };
+
+  useEffect(() => {
+    wsChannel?.addEventListener("open", () => {
+      setWsOpen(true);
+    });
+  }, [wsChannel]);
+
   return (
     <div>
-      <textarea></textarea>
-      <button>Send</button>
+      <textarea
+        onChange={(e) => setMessage(e.currentTarget.value)}
+        value={message}
+      ></textarea>
+      <button disabled={wsChannel === null || !wsOpen} onClick={sendMessage}>
+        Send
+      </button>
     </div>
   );
 };

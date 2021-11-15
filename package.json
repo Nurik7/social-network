@@ -2,7 +2,7 @@
   "name": "it-kamasutra-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nurik7.github.io/aaa",
+  "homepage": "https://nurik7.github.io/",
   "dependencies": {
     "@jamesives/github-pages-deploy-action": "^4.1.5",
     "@testing-library/jest-dom": "^5.14.1",
